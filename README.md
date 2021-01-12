@@ -56,7 +56,7 @@ Example: `(- 2 1) → 1`
     MULTIPLY ::= (* EXP EXP+)
 
 Behavior: return the product of all EXP inside.  
-Example: `(\* 1 2 3 4) → 24`
+Example: `(* 1 2 3 4) → 24`
 
     DIVIDE ::= (/ EXP EXP)
 
@@ -121,7 +121,7 @@ Example:
 
 Behavior: Define a variable named id whose value is EXP.  
 Example:  
-(define x 5)  
+`(define x 5)`  
 `(+ x 1) → 6`
 
 ### Function
@@ -140,10 +140,10 @@ FUN-EXP defines a function. When a function is called, bind FUN-IDs to PARAMs, j
 Examples:  
 `((fun (x) (+ x 1)) 2) → 3`
 
-(define foo (fun () 0))  
+`(define foo (fun () 0))`  
 `(foo) → 0`
 
-(define x 1)  
-(define bar (fun (x y) (+ x y)))  
+`(define x 1)`  
+`(define bar (fun (x y) (+ x y)))`  
 `(bar 2 3) → 5`  
 `x → 1`
