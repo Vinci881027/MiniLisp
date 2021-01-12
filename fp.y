@@ -190,7 +190,7 @@ def_stmt: LP DEFINE ID exp RP {
 variable: ID
     ;
 // function
-fun_exp: LP FUN fun_ids fun_body RP {$$ = $4;}
+fun_exp: LP FUN fun_ids fun_body RP
     ;
 fun_ids: LP fun_ids_exp RP
     | LP RP
