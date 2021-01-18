@@ -12,11 +12,7 @@ This file can compile and link bison and flex. And then it will generate an exec
 
 ## Test
 
-    $ ./fp < test_data/"file name".lsp
-
-You can also input by yourself.
-
-    $ ./fp
+    $ ./test.sh
 
 ## Features
 
